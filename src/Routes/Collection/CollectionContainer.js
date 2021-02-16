@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { moviesApi } from "../../api";
 import CollectionPresenter from "./CollectionPresenter";
 
