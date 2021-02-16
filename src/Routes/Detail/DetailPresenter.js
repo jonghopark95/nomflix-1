@@ -269,7 +269,7 @@ const DetailPresenter = ({ result, loading, error, isMovie }) =>
                       src={`https://image.tmdb.org/t/p/original${
                         result.belongs_to_collection.poster_path
                       }`}
-                      style={{ width: "180px" }}
+                      style={{ width: "120px" }}
                     />
                   </CollectionLink>
                 )}
