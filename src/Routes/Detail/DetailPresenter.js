@@ -211,7 +211,7 @@ const DetailPresenter = ({ result, loading, error, isMovie }) =>
                     <RelateName>{name}</RelateName>
                     {logo_path !== null && (
                       <RelateImage
-                        src={`https:/image.tmdb.org/t/p/w300/${logo_path}`}
+                        src={`https:/image.tmdb.org/t/p/w300${logo_path}`}
                       />
                     )}
                   </RelateSection>
