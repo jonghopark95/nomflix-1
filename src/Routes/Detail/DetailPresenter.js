@@ -211,7 +211,7 @@ const DetailPresenter = ({ result, loading, error, isMovie }) =>
                     <RelateName>{name}</RelateName>
                     {logo_path !== null && (
                       <RelateImage
-                        src={`https:/image.tmdb.org/t/p/w300${logo_path}`}
+                        src={`https:/image.tmdb.org/t/p/original${logo_path}`}
                       />
                     )}
                   </RelateSection>
@@ -266,7 +266,7 @@ const DetailPresenter = ({ result, loading, error, isMovie }) =>
                     to={`/collection/${result.belongs_to_collection.id}`}
                   >
                     <Poster
-                      src={`https://image.tmdb.org/t/p/original/${
+                      src={`https://image.tmdb.org/t/p/original${
                         result.belongs_to_collection.poster_path
                       }`}
                     />
@@ -302,7 +302,7 @@ const DetailPresenter = ({ result, loading, error, isMovie }) =>
                       >
                         <CollectionLink to={`/show/${id}`}>
                           <Poster
-                            src={`https://image.tmdb.org/t/p/original/${poster_path}`}
+                            src={`https://image.tmdb.org/t/p/original${poster_path}`}
                           />
                         </CollectionLink>
                         <span>{name}</span>
